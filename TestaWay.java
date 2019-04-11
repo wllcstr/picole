@@ -3,7 +3,6 @@ package ex;
 public class TestaWay {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		TrieADT<String> t = new WayTrie<>();
 		
@@ -16,7 +15,7 @@ public class TestaWay {
 		
 		//System.out.println(t.countKeysWithPrefix("pico"));
 		
-		System.out.println(t.longestPrefixOf("PICOLO"));
+		System.out.println(t.longestPrefixOf("PICOLE DE MANGA"));
 
 	}
 

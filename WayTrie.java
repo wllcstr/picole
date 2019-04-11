@@ -121,11 +121,8 @@ public class WayTrie<V> implements TrieADT<V> {
 		  
 		  String s = prefix.toString();
 		  
-		  V r = search(s);
-		  
-		  if(r != null) {
-			  return r.toString();
-		  }
+		  if(countKeysWithPrefix(s) > 1)
+			  return s;
 		  
 		  return longest(prefix.deleteCharAt(prefix.length() - 1));
 	  }
